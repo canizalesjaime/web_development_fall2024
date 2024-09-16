@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Float</title>
+  <style>
+    div {
+      display: inline-block;
+      width: 40%;
+    }
+
+    p {
+      font-size: 2em;
+    }
+
+    img {
+      float: left;
+      height: 200px;
+      width:200px;
+      border: 10px solid black;
+    }
+    .gears {
+      background-color: blue;
+      float: left;
+    }
+
+    .eqn {
+      background-color: red;
+      float:right;
+    }
+
+    footer {
+      text-align: center;
+      background-color: blueviolet;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gears">
+    <h2>Gears</h2>
+
+    <img src="gears.webp" alt="gears" />
+    <p class="first-paragraph"> 
+        Give me a lever and a place to stand and I will move the earth. Give me a fulcrum, and I shall move the world. Give me a firm spot on which to stand, and I shall move the earth.-Archimedes
+    </p>
+  </div>
+  <div class="eqn">
+    <h2>Eqn</h2>
+    <img src="eqn.png" alt="equation" />
+    <p class="second-paragraph">
+        The base of the natural logarithm e
+ and the ratio of a circle's circumference to its diameter pi
+ are related in the sense that both are transcendental numbers that claim a central role in their respective natural settings. The former is rooted in the study of calculus, whereas the latter is rooted in geometry.
+    </p>
+  </div>
+
+  <footer>Copyright. This is the footer</footer>
+</body>
+
+</html>

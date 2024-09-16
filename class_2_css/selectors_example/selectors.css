@@ -1,0 +1,20 @@
+*{
+    text-align: center;
+}
+
+h1{
+  color: blue;  
+}
+
+.change-font-size{
+    font-size: 30px;
+}
+
+#change-font-color{
+    color: green;
+}
+
+a[href]{
+    background-color: chocolate;
+}
+

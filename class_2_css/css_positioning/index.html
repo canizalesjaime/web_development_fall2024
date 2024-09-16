@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .brown-circle{
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: relative;
+            left: 250px;
+            top: 150px;
+        }
+
+        .yellow-rectangle{
+            background-color: yellow;
+            height: 300px;
+            width: 500px;
+            position: absolute;
+            left: 300px;
+            top: 1000px;
+        }
+
+        .blue-rectangle{
+            background-color: blue;
+            height: 300px;
+            width: 400px;
+            position: fixed;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="blue-rectangle">
+    </div>
+    <div class="yellow-rectangle">
+        <div class="brown-circle"> </div> 
+    </div>
+</body>
+</html>

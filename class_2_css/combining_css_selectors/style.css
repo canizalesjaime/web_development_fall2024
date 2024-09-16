@@ -1,0 +1,26 @@
+/* group selector */
+h1, h2 {
+    color: dimgrey;
+}
+
+/* child selector */
+.box > .obtained{
+    color: green;
+}
+
+
+/* descendant selector */
+.box li{ 
+    color: blue;
+}
+
+/* chaining selector */
+li.obtained{
+    color: red;
+}
+
+
+/* combining combiners */
+ul > p.obtained{
+    font-size: 2rem;
+}
