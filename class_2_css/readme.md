@@ -1,8 +1,8 @@
 # Class 2 CSS
 
-## Things To Download This Week (Todays date 02/07/2024)
+## Things To Download This Week (Todays date 09/16/2024)
 1. Markdown All in One extension in vscode (optional)
-<br><br>
+<br><br> <!-- this is html code-->
 
 ## Weekly important links:
 * [google fonts](https://fonts.google.com/)
