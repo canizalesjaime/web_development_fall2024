@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            text-align: center;
+        }
+
+        /* parent container*/
+        .flex-container{
+            display: flex;
+            gap: 10px;
+            background-color: black;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* child items */
+        .red{
+            background-color: red;
+            order: 1;
+            flex-basis: 200px;
+            align-self: flex-end;
+        }
+
+        /* child items */
+        .blue{
+            background-color: blue;
+            order: 2;
+    
+        }
+
+        /* child items */
+        .orange{
+            background-color: orange;
+            max-width: 400px;
+     
+        }
+
+        /* child items */
+        .indigo{
+            background-color: indigo;
+           
+           
+        }
+
+        div > div{
+            flex-basis: 100px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="red">
+           <p> red </p> 
+        </div>
+
+        <div class="blue">
+            <p> blue </p> 
+        </div>
+
+        <div class="orange">
+            <p> orange </p> 
+        </div>
+
+        <div class="indigo">
+            <p> indigo </p> 
+        </div>
+         
+    </div>
+</body>
+</html>

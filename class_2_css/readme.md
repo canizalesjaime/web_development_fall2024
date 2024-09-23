@@ -16,15 +16,7 @@
 6. Inspecting CSS
 7. The Box Model(Margin, Padding, Borders)
 8. The Cascading System (Specificty and Inheritance)
-9. Combining CSS Selectors
-10. CSS Positioning
-11. CSS Display
-12. Float
-13. Media Queries
-14. Notes
 
-
-Next class we will pick up on **CSS Combining CSS Selectors**  
 
 ## 1. Introduction to Markdown
 Markdown is a lightweight markup language for creating formatted text using a plain-text editor using the '.md' extension. Open this file(readme.md) in VScode and go through formatting!
@@ -99,53 +91,5 @@ From lowest to highest priority.
 
 [Example](./the_cascading_system/index.html)
 
-
-## 9. Combining CSS Selectors
-You can combine different CSS selectors using certain operators, to apply your CSS rules more specifically and more generally.
-### List of operators  
-1. Comma operator ',': You can combine CSS selectors using a comma, which will apply your rules(attribute values) to all the css selectors. Example: h1, h2, p {color: green}, all h1,h2 and p tags will have the font color green. 
-2. Child operator '\>': You can modify all tags that satisfy the 'parent \> child' relationship. Example: ul \> li{color: blue}, will change the font color of all li elements that are children of the ul elements to blue. 
-3. Descendant operator ' '(denoted with a space between selectors), is the more general case of the child operator and specifies whether the lefthand selector is an ancestor of the righthand selector 'ancestor descendant'. Example: .box li{color: yellow} turns all li elements who have an ancestor with the .box class to the font color yellow. 
-4. Chaining selectors works a bit different and does not use an explicit operator. Instead it places selectors adjacently with no spaces in between. If you are using an element selector it must be placed at the beginning of the chained selector. Chaining selectors are used to find very specific tags. Example: p.class1{color: orange}, chains the paragraph element selector with a class selector, to change the font to orange for all tags that have their element as p and have a class of "class1".
-5. You are also allowed to combine all the above! Example: ul > p.obtained{font-size: 2rem} 
-
-[Class Example](./combining_css_selectors/index.html)
-
-## 10. CSS Positioning
-* Static Positioning - Defaults to the next slot to put the item(can't be moved).
-* Relative Positioning - Relative to default position.
-* Absolute Positioning - Position relative to nearest positioned ancestor(parent) or top left corner of webpage
-* Fixed Positioning - Position relative to top left corner of browser window(not webpage).
-
-[Class Example](./css_positioning/index.html)
-
-## 11. CSS Display
-* inline: Used to place items on the same line(box is as small as possible)(p{display:inline;})
-* block: Uses the box-model to place boxes vertically on webpage(Usually default)(p{display:block;})
-* inline-block: Allows boxes to be placed on same line(p{display:inline-block;})
-
-[Class Example](./css_display/index.html)
-
-## 12. Float
-Float is used to have text wrap around images as shown in [Example](./float/index.html)
-
-## 13. Media Queries
-Media queries is our first example of website responsiveness. It allows us to to modify our website based on its window size.
-* @media (max-width: 400px){...} is the syntax that works for modifying the css code of a window size between 0-400px.
-* @media (min-width: 300px){...} is the syntax that works for modifying the css code of a window size between 300px-max window size.
-* @media (min-width: 300px) and (max-width: 500px){...} is the syntax that works for modifying the css code of a window size between 300px-500px.
-* @media (max-width: 300px) and (min-width: 500px){...} is the syntax that works for modifying the css code of a window size between from 0px-300px and 500px-max window size.
-
-See [Example](./media_queries/index.html)
-
-
-## 14. Notes
-* Next class flex, Grid, bootstrap
-* Play with box-model on chrome
-* Note that class="first second" is how you assign two classes to the same tag.
-
-
-<!-- ## Homework Assignment
-Create 5 boxes diagonally using the box-model and the tag \<div\>, and have their borders double as you go down the page. Write any text you'd like in each of the boxes with all the padding attributes set to 10px. See examples from class 2 lecture on github. Submit the deployed website like you did for question 1. -->
 
 
