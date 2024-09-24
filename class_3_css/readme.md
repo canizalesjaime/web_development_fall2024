@@ -21,11 +21,34 @@
 ## Combining CSS Selectors
 You can combine different CSS selectors using certain operators, to apply your CSS rules more specifically and more generally.
 ### List of operators  
-1. **Comma operator ',':** You can combine CSS selectors using a comma, which will apply your rules(attribute values) to all the css selectors. Example: h1, h2, p {color: green}, all h1,h2 and p tags will have the font color green. 
-2. **Child operator '\>':** You can modify all tags that satisfy the 'parent \> child' relationship. Example: ul \> li{color: blue}, will change the font color of all li elements that are children of the ul elements to blue. 
-3. **Descendant operator ' '**(denoted with a space between selectors), is the more general case of the child operator and specifies whether the lefthand selector is an ancestor of the righthand selector 'ancestor descendant'. Example: .box li{color: yellow} turns all li elements who have an ancestor with the .box class to the font color yellow. 
-4. **Chaining selectors** works a bit different and does not use an explicit operator. Instead it places selectors adjacently with no spaces in between. If you are using an element selector it must be placed at the beginning of the chained selector. Chaining selectors are used to find very specific tags. Example: p.class1{color: orange}, chains the paragraph element selector with a class selector, to change the font to orange for all tags that have their element as p and have a class of "class1".
-5. You are also allowed to combine all the above! Example: ul > p.obtained{font-size: 2rem} 
+1. **Comma operator ',':** You can combine CSS selectors using a comma, which will apply your rules(attribute values) to all the css selectors. Example:
+```css
+h1, h2, p {color: green}
+``` 
+all h1,h2 and p tags will have the font color green.
+
+2. **Child operator '\>':** You can modify all tags that satisfy the 'parent \> child' relationship. Example:
+```css 
+ul > li{color: blue}
+```
+will change the font color of all li elements that are children of the ul elements to blue. 
+
+3. **Descendant operator ' '(denoted with a space between selectors):**, is the more general case of the child operator and specifies whether the lefthand selector is an ancestor of the righthand selector 'ancestor descendant'. Example:
+```css
+ .box li{color: yellow}
+``` 
+turns all li elements who have an ancestor with the .box class to the font color yellow. 
+
+4. **Chaining selectors** works a bit different and does not use an explicit operator. Instead it places selectors adjacently with no spaces in between. If you are using an element selector it must be placed at the beginning of the chained selector. Chaining selectors are used to find very specific tags. Example:
+```css 
+p.class1{color: orange}
+``` 
+chains the paragraph element selector with a class selector, to change the font to orange for all tags that have their element as p and have a class of "class1".
+
+5. You are also allowed to combine all the above! Example:
+ ```css
+  ul > p.obtained{font-size: 2rem}
+``` 
 
 [Class Example](./combining_css_selectors/index.html)
 

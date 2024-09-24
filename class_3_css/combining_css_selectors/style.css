@@ -21,6 +21,6 @@ li.obtained{
 
 
 /* combining combiners */
-ul > p.obtained{
+ul > p.obtained, h1{
     font-size: 2rem;
 }
