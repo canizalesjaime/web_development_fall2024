@@ -1,4 +1,4 @@
-# Class 6 Intro to Javascript
+# Class 5 Intro to Javascript
 
 ## Table of contents:
 1. Links
@@ -25,5 +25,5 @@ To reset web browser: right click reload button
 
 ## 3. Homework
 * Homework 1:Install node.js from [here](https://nodejs.org/en/download/package-manager/).
-* Homework 2: For chapters 2,3, and 4; write a function for each of the exercises in  javascript(should be at least 13 functions total). Submit a .js file to blackboard
+
   
