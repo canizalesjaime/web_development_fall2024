@@ -6,7 +6,7 @@
 *.fls
 *.log
 *.synctex.gz
+# g++ 
 *.out
 
 hidden/
-homework_solutions/hw_2_solution
