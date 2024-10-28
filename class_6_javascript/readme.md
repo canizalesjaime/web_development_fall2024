@@ -11,12 +11,18 @@
 
 
 ## 2. Javascript 
-Go through these notes [link](https://eloquentjavascript.net/03_functions.html)(chapters 3 and 4) <br> 
+Go through these notes [link](https://eloquentjavascript.net/03_functions.html)(chapters 3) <br> 
 
 
 ## 3. Code for chapter 3
 ```javascript
-//is num even 5
+///////////////////////////////////////////////////////////////////////////////
+function min(num1, num2)
+{
+    return num1>num2?num1:num2;
+}
+
+
 ///////////////////////////////////////////////////////////////////////////////
 function isEven(num)
 {
