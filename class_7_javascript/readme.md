@@ -1,10 +1,9 @@
-# Class 8 Document Object Model (DOM)
+# Class 7 Javascript continued
 
 ## Table of contents:
 1. Chapter 4 eloquent javascript
 2. Including Javascript with HTML
 3. Node.js
-4. Notes
 
    
 ## Links
@@ -33,7 +32,7 @@ Node.js is a software that you can download on your computer. The software provi
 ### Using node.js
 * A node directory is created by going into that directory and running the command ``` npm init ``` if this command runs successfully a file named <em> package.json </em> will be created in your current node directory.
 * In <em> package.json </em> add  the line - <em>"type": "module",</em>. See [example](./npm_with_node/package.json).
-* a node project always installs its dependencies locally. Do ``` run npm i \<package_name \> ``` to install dependencies.  For example: ``` run npm i express ```. After you run this command you will notice a new folder in your directory named <em> node_modules </em>, inside this directory is where all your dependencies will be installed.
+* a node project always installs its dependencies locally. Do  ```npm i \<package_name \> ``` to install dependencies.  For example: ``` npm i express ```. After you run this command you will notice a new folder in your directory named <em> node_modules </em>, inside this directory is where all your dependencies will be installed.
 * If you are using git, you will notice that whenever you install a dependency, a bunch of files are added to <em> node_modules </em>. In order to avoid clutter in your git commits, it is good practice to add the line <em>*node_modules</em> to your <em>.gitignore</em> file. See [example](../.gitignore).
 You can always reinstall your dependencies from your package.json file by running ``` npm install ```. You're dependencies will always be listed in <em>package.json</em>
  

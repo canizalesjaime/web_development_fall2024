@@ -2,7 +2,7 @@
 
 
 ## Objective:
-Create a responsive **Personal Portfolio Webpage** that displays a developer’s name, a brief bio, a projects section, and contact information. The page should use HTML for structure, CSS for styling, Bootstrap for responsiveness, and JavaScript for simple interactivity.
+Create a responsive **Personal Portfolio Webpage** that displays a developer’s name, a brief bio, a projects section, and contact information. The page should use HTML for structure, CSS for styling, Bootstrap for responsiveness. 
 
 ## Instructions:
 Complete the following tasks. Use the given HTML, CSS, and JavaScript placeholders to finish the project. Your website should be visually appealing, responsive on various screen sizes, and functional.

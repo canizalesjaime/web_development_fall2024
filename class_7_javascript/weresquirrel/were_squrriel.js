@@ -1,9 +1,11 @@
 // Correlation 
 ///////////////////////////////////////////////////////////////////////////////
-function phi(table) 
+function phi(table)// this is a function but not a method 
 {
   return (table[3] * table[0] - table[2] * table[1]) /
-    Math.sqrt( (table[2] + table[3]) * (table[0] + table[1]) *
+  // A method is a function thats part of an object or array
+  // is a method  
+  Math.sqrt( (table[2] + table[3]) * (table[0] + table[1]) *
                (table[1] + table[3]) * (table[0] + table[2]) );
 }
 
