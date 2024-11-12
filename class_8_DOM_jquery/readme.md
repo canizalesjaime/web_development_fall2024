@@ -401,6 +401,6 @@ One thing to note is that you should always add javascript as close to the end(a
 
 
 ## Notes
-* Homework: Finish the Drum Kit starting files project using javascript and the DOM. You want to replace the images of the letters with all the images in the folder: [images](./Drum%20Kit%20Starting%20Files/images/), after you set the images also add the relative sound file so that when you click the image of the drum, it makes the corresponding sound. REMEMBER, you are only allowed to modify the index.js [file](./Drum%20Kit%20Starting%20Files/index.js). Submit the index.js file to blackboard.
+* Homework: Finish the Drum Kit starting files project using javascript and Jquery [files](./jquery_drum_kit/). You want to replace the images of the letters with all the images in the folder: [images](./jquery_drum_kit/images/), after you set the images also add the relative sound file so that when you click the image of the drum, it makes the corresponding sound. Also, when you press the key on the drum, the sound should go off too. REMEMBER, you are only allowed to modify the index.js [file](./jquery_drum_kit/index.js). Submit the index.js file to blackboard.
 
   
