@@ -393,7 +393,7 @@ jQuery is a powerful and easy-to-use JavaScript library that simplifies DOM mani
 
 ### Including Jquery in HTML
 Add this to html file:  
-\<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"\>\</script\>
+```<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>```
 
 See example:  [example](./jquery_intro/index.html) <br><br>
 One thing to note is that you should always add javascript as close to the end(as possible) of the script. 
