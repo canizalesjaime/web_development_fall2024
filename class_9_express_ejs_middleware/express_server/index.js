@@ -2,9 +2,12 @@ import express from "express";
 const app = express();
 const port = 3000;
 
-app.get("/", (req,res) =>{
+// the get method is a http method; http://www.facebook.com
+// req is any information sent from client to server
+// res is any information sent from server to client
+app.get("/", (req,res) =>{ 
     //console.log(req.rawHeaders);
-    res.send("<h1>HELLOO2</h1>");
+    res.send("<h1>GOOD BYE</h1>");
 });
 
 app.get("/about", (req,res) =>{

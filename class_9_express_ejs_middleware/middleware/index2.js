@@ -4,6 +4,7 @@ import morgan from "morgan";
 const app = express();
 const port = 3000;
 
+// to apply a middleware we use the "use" method
 app.use(morgan("tiny"));
 
 app.get("/", (req, res) => {

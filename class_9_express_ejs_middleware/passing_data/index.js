@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit", (req, res) => {
-  let len= req.body.fName.length+req.body.fName.length;
+  let len= req.body.fName.length+req.body.lName.length;
   res.render("index.ejs",{out:"There are "+len+" letters in your name."});
 });
 
