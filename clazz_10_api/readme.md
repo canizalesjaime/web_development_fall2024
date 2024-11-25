@@ -450,4 +450,7 @@ pm.test("Response time is less than 200ms", function () {
 
 Postman is an indispensable tool for developers working with APIs, from debugging to testing and deployment.
 
+
+## Notes
+* [class video](https://www.youtube.com/watch?v=mYozLEMmJrA)
   
