@@ -40,6 +40,14 @@
       background-color: #e74c3c;
     }
 
+    #createAcct {
+      background-color: purple;
+    }
+
+    #createBearerToken{
+      background-color: darkolivegreen;
+    }
+
     .response-area {
       margin-top: 20px;
       background-color: white;
@@ -53,7 +61,8 @@
   <button id="basicAuth" onclick="window.location.href='/basicAuth'">Basic Auth</button>
   <button id="apiKey" onclick="window.location.href='/apiKey'">API Key</button>
   <button id="bearerToken" onclick="window.location.href='/bearerToken'">Bearer Token</button>
-
+  <button id="createAcct" onclick="window.location.href='/createAcct'">Create Account</button>
+  <button id="createBearerToken" onclick="window.location.href='/createBearerToken'">Create Bearer Token</button>
   <div class="response-area">
     <p>
       <%=content%>

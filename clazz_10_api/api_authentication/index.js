@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
   res.render("index.ejs", { content: "API Response." });
 });
 
+
 app.get("/noAuth", async (req, res) => {
   try {
     const result = await axios.get(API_URL + "/random");
@@ -23,6 +24,7 @@ app.get("/noAuth", async (req, res) => {
     res.status(404).send(error.message);
   }
 });
+
 
 app.get("/basicAuth", async (req, res) => {
   try {
@@ -37,6 +39,7 @@ app.get("/basicAuth", async (req, res) => {
     res.status(404).send(error.message);
   }
 });
+
 
 app.get("/apiKey", async (req, res) => {
   try {
@@ -56,6 +59,7 @@ const config = {
   headers: { Authorization: `Bearer ${yourBearerToken}` },
 };
 
+
 app.get("/bearerToken", async (req, res) => {
   try {
     const result = await axios.get(API_URL + "/secrets/2", config);
@@ -65,6 +69,31 @@ app.get("/bearerToken", async (req, res) => {
   }
 });
 
+
+app.get("/createAcct", async (req, res) => {
+  try {
+    const result = await axios.post(API_URL + "/register",{
+        username: "",
+        password: "",});
+    console.log(result);
+    res.render("index.ejs", { content: result.data.success });
+  } catch (error) {
+    res.status(404).send(error.message);
+  }
+});
+
+
+app.get("/createBearerToken", async (req, res) => {
+  try {
+    const result = await axios.post(API_URL + "/get-auth-token",{
+        username: "",
+        password: "",});
+    console.log(result);
+    res.render("index.ejs", { content: result.data.token });
+  } catch (error) {
+    res.status(404).send(error.message);
+  }
+});
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
