@@ -7,7 +7,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-//params: 1-what to show,2-where tp show
+//params: 1-what to show,2-where to show
 // ReactDOM.render(<div>
 //                     <h1>My List</h1>
 //                     <ul>
@@ -19,7 +19,7 @@ import ReactDOM from "react-dom";
 //                 document.querySelector("#root"));
 
 
-let name = "Jaime";
+let name = "Jaime C";
 let imag="https://picsum.photos/200";
 let customStyle = 
 {
@@ -29,26 +29,28 @@ let customStyle =
 };
 
 
-let temp = new Date().getHours();
+let hour = new Date().getHours(); //18
 let col = "blue";
-if(temp < 12)
+if(hour < 12)
 {
-    temp="Good Morning";
+    hour="Good Morning";
     col="red";
 }
-else if (temp < 19)
+else if (hour < 19)
 {
-    temp="Good Afternoon";
+    hour="Good Afternoon";
     col="green;"
 } 
-else temp = "Good Night";
+else hour = "Good Night";
 
 customStyle.color="purple";
+
+
+//javascript{html{javascript}}
 ReactDOM.render(<div>
     <h1>my name is {name}</h1>
     <p style={customStyle}>my lucky number is {Math.floor(Math.random()*10)}</p>
-    <p className="heading" style={{color:col}}>{temp}</p>
+    <p className="heading" style={{color:col}}>{hour}</p>
     <img src={imag} />
     <footer>Copyright {new Date().getFullYear()}</footer>
     </div>,document.querySelector("#root"));
-

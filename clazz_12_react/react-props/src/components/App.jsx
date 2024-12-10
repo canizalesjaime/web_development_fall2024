@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card";
 import contacts from "../contacts";
 
+// thew card paramers are the props(properties)
 function App() {
   return (
     <div>
